@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Track Order"
+        android:textColor="#172033"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/orderCard"
+        android:layout_width="0dp"
+        android:layout_height="275dp"
+        android:layout_margin="18dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:text="Order #SE123456\n\n🟢 Placed\n\n🟢 Shipped\n\n🟢 Out for Delivery\n\n🟢 Delivered\n\nNike Running Shoes\n₹4,999       Qty: 1"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvDelivery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Delivery Partner\n\nBlue Dart\nTracking ID: 1234567890\n\nDelivery Address\nAnubhav Kumar\n123, Green Park, Mehsana"
+        android:textColor="#172033"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

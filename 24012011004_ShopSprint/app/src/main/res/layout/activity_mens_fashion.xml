@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Men's Fashion"
+        android:textColor="#172033"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Product 1 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productMensShirt"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toStartOf="@id/productJeans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👕\n\nMen's Polo T-Shirt\n\n₹699\n46% OFF"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Product 2 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productJeans"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="18dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/productMensShirt"
+        app:layout_constraintTop_toTopOf="@id/productMensShirt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👖\n\nDenim Jeans\n\n₹1,299\n48% OFF"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Product 3 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productShoes"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toStartOf="@id/productHoodie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productMensShirt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👟\n\nRunning Shoes\n\n₹2,499\n50% OFF"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Product 4 -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/productHoodie"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="18dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/productShoes"
+        app:layout_constraintTop_toTopOf="@id/productShoes">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="🧥\n\nHoodie Sweatshirt\n\n₹1,199\n48% OFF"
+            android:textColor="#172033"
+            android:textSize="14sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

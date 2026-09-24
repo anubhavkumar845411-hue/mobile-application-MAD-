@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC">
+
+    <!-- Logo -->
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="ShopEase"
+        android:textColor="#5146E5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profile -->
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="18dp"
+        android:background="#E9EAF2"
+        android:gravity="center"
+        android:text="👤"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLogo" />
+
+    <!-- Search -->
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/bg_search"
+        android:hint="Search for products, brands..."
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLogo" />
+
+    <!-- Offer Banner -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBanner"
+        android:layout_width="0dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        app:cardBackgroundColor="#5146E5"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSearch">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvBannerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Big Savings\nBig Smiles"
+                android:textColor="@android:color/white"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvBannerSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Up to 50% OFF on top brands"
+                android:textColor="#EDE9FE"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBannerTitle" />
+
+            <Button
+                android:id="@+id/btnShopNow"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="3dp"
+                android:text="Shop Now →"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="🎧"
+                android:textSize="60sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Categories -->
+
+    <TextView
+        android:id="@+id/tvCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Shop by Category"
+        android:textColor="#172033"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardBanner" />
+
+    <!-- Men -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMen"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCategories">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👕\nMen"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Women -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWomen"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@id/cardMen"
+        app:layout_constraintTop_toTopOf="@id/cardMen">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👗\nWomen"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Electronics -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardElectronics"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@id/cardWomen"
+        app:layout_constraintTop_toTopOf="@id/cardMen">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="💻\nElectronics"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Featured -->
+
+    <TextView
+        android:id="@+id/tvFeatured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Best Deals For You"
+        android:textColor="#172033"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardMen" />
+
+
+    <!-- Product -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProduct"
+        android:layout_width="155dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFeatured">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="9dp">
+
+            <TextView
+                android:id="@+id/productImage"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:background="#EEF1F7"
+                android:gravity="center"
+                android:text="👟"
+                android:textSize="55sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Nike Running Shoes"
+                android:textColor="#172033"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="₹4,999   38% OFF"
+                android:textColor="#16A34A"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Bottom Navigation -->
+
+    <TextView
+        android:id="@+id/btnCart"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="⌂ Home       ▦ Categories       🛒 Cart       👤 Profile"
+        android:textColor="#172033"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

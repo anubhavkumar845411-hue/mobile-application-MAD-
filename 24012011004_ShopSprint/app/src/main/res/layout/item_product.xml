@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="225dp"
+    android:layout_margin="7dp"
+
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+
+            android:background="#EEF1F7"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+
+            android:textColor="#172033"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgProduct" />
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+
+            android:textColor="#172033"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName" />
+
+        <TextView
+            android:id="@+id/tvProductStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="10dp"
+
+            android:textColor="#16A34A"
+            android:textSize="11sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/tvProductPrice"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

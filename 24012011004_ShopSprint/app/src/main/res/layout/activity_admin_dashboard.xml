@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Admin Dashboard"
+        android:textColor="#172033"
+        android:textSize="26sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProductsCount"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Products\n0"
+        android:textColor="#172033"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAdminTitle" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="20dp"
+
+        android:text="Add Product"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProductsCount" />
+
+    <Button
+        android:id="@+id/btnManageProducts"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="10dp"
+
+        android:text="Manage Products"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddProduct" />
+
+    <Button
+        android:id="@+id/btnOrders"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="10dp"
+
+        android:text="Manage Orders"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnManageProducts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
